@@ -18,6 +18,9 @@ module.exports = {
               '@babel/plugin-proposal-class-properties',
               '@babel/plugin-proposal-optional-chaining',
               '@babel/plugin-syntax-jsx'
+            ],
+            presets: [
+              '@babel/preset-react'
             ]
           }
         }
@@ -37,10 +40,10 @@ module.exports = {
       reducers: path.resolve(__dirname, './client/app/reducers'),
       components: path.resolve(__dirname, './client/app/components'),
       actions: path.resolve(__dirname, './client/app/actions'),
-      SSComponents: path.resolve(__dirname, './client/app/components/common/SSComponents'),
-      utils: path.resolve(__dirname, './client/app/utils'),
-      icons: path.resolve(__dirname, './client/app/components/common/SVGIcons'),
-      constants: path.resolve(__dirname, './server/constants'),
+      // SSComponents: path.resolve(__dirname, './client/app/components/common/SSComponents'),
+      // utils: path.resolve(__dirname, './client/app/utils'),
+      // icons: path.resolve(__dirname, './client/app/components/common/SVGIcons'),
+      // constants: path.resolve(__dirname, './server/constants'),
       'react-redux-toastr': path.resolve(__dirname, './node_modules/react-redux-toastr')
     }
   },
