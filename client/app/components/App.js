@@ -1,7 +1,11 @@
 import React from 'react';
+import { Text, Button, Checkbox } from '@betterapps/component-library';
 
 const App = ()=>{
-  return <p>Welcome to React</p>
+  return (<>
+  {/* <Text>Welcome to React</Text> */}
+  </>
+  );
 }
 
 export default App;
