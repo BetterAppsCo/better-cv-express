@@ -1,9 +1,8 @@
 import React from 'react';
-import { Text, Button, Checkbox } from '@betterapps/component-library';
 
 const App = ()=>{
   return (<>
-  {/* <Text>Welcome to React</Text> */}
+    <h1>Welcome to React</h1>
   </>
   );
 }
