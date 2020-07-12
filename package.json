@@ -22,7 +22,6 @@
     "prod-build:sass": "node build-scripts/build-sass.js",
     "prod-build:js": "npm-run-all --parallel prod-build:webpack*",
     "prod-build": "npm-run-all -p prod-build:js prod-build:sass -s copy:*",
-    "prod": "npm-run-all prod-build publish",
     "prod-start": "node server/bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

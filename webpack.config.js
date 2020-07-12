@@ -25,11 +25,13 @@ module.exports = {
           }
         }
       },
-      { test: /\.css$/, 
-        use: ['style-loader', 'css-loader', 'postcss-loader'] 
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
-      { test: /\.scss$/, 
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] 
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
       }
     ]
   },
@@ -40,9 +42,6 @@ module.exports = {
       reducers: path.resolve(__dirname, './client/app/reducers'),
       components: path.resolve(__dirname, './client/app/components'),
       actions: path.resolve(__dirname, './client/app/actions'),
-      // utils: path.resolve(__dirname, './client/app/utils'),
-      // icons: path.resolve(__dirname, './client/app/components/common/SVGIcons'),
-      // constants: path.resolve(__dirname, './server/constants'),
       'react-redux-toastr': path.resolve(__dirname, './node_modules/react-redux-toastr'),
     }
   },

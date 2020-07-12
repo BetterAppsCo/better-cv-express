@@ -17,7 +17,8 @@ module.exports = {
             plugins: [
               ['@babel/plugin-proposal-decorators', { legacy: true }],
               '@babel/plugin-proposal-class-properties',
-              '@babel/plugin-proposal-optional-chaining'
+              '@babel/plugin-proposal-optional-chaining',
+              '@babel/plugin-syntax-jsx'
             ],
             presets: [
               '@babel/preset-react'
@@ -25,11 +26,13 @@ module.exports = {
           }
         }
       },
-      { test: /\.css$/, 
-        use: ['style-loader', 'css-loader', 'postcss-loader'] 
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
-      { test: /\.scss$/, 
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'] 
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
       }
     ]
   },
@@ -39,10 +42,6 @@ module.exports = {
       reducers: path.resolve(__dirname, './client/app/reducers'),
       actions: path.resolve(__dirname, './client/app/actions'),
       components: path.resolve(__dirname, './client/app/components'),
-      // SSComponents: path.resolve(__dirname, './client/app/components/common/SSComponents'),
-      // utils: path.resolve(__dirname, './client/app/utils'),
-      // icons: path.resolve(__dirname, './client/app/components/common/SVGIcons'),
-      // constants: path.resolve(__dirname, './server/constants'),
       'react-redux-toastr': path.resolve(__dirname, './node_modules/react-redux-toastr')
     }
   },
