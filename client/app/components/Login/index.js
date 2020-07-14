@@ -20,7 +20,7 @@ const Login = () => {
               <div className="device-mockup iphone6_plus portrait white">
                 <div className="device">
                   <div className="screen">
-                    <img src="http://localhost:3000/public/img/site-resume.png" className="img-fluid" alt="" />
+                    <img src="https://bettercv.s3.us-east-2.amazonaws.com/static/images/site-resume.png" className="img-fluid" alt="" />
                   </div>
                   <div className="button">
                   </div>
