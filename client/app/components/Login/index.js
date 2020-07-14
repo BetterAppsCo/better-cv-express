@@ -1,47 +1,28 @@
 import React from 'react';
+import Footer from './Footer';
+import NavBar from './NavBar';
 
 const Login = () => {
   return (<>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <NavBar />
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+    <header className="masthead">
+      <div className="container h-100">
+        <div className="row h-100">
+          <div className="col-lg-7 my-auto">
+            <div className="header-content mx-auto">
+              <h1 className="mb-5">Only 1% of resumes make it past the first round. Be in the top 1%</h1>
+              <a href="#download" className="btn btn-outline btn-xl js-scroll-trigger">Sign up with Google</a>
             </div>
           </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="" />
+          <div className="col-lg-5 my-auto">
+            <div className="device-container">
+              <div className="device-mockup iphone6_plus portrait white">
+                <div className="device">
+                  <div className="screen">
+                    <img src="http://localhost:3000/public/img/site-resume.png" className="img-fluid" alt="" />
                   </div>
-                  <div class="button">
+                  <div className="button">
                   </div>
                 </div>
               </div>
@@ -51,75 +32,70 @@ const Login = () => {
       </div>
     </header>
 
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-            <p>Our app is available on any mobile device! Download now to get started!</p>
-            <div class="badges">
-              {/* <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt="" />
-                <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt="" /> */}
-            </div>
+    <section className="download bg-primary text-center" id="download">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-8 mx-auto">
+            <h2 className="section-heading">Discover what all the buzz is about!</h2>
           </div>
         </div>
       </div>
     </section>
 
-    {/* <section class="features" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
+    {/* <section className="features" id="features">
+      <div className="container">
+        <div className="section-heading text-center">
           <h2>Unlimited Features, Unlimited Fun</h2>
-          <p class="text-muted">Check out what you can do with this app theme!</p>
+          <p className="text-muted">Check out what you can do with this app theme!</p>
           <hr>
         </div>
-          <div class="row">
-            <div class="col-lg-4 my-auto">
-              <div class="device-container">
-                <div class="device-mockup iphone6_plus portrait white">
-                  <div class="device">
-                    <div class="screen">
+          <div className="row">
+            <div className="col-lg-4 my-auto">
+              <div className="device-container">
+                <div className="device-mockup iphone6_plus portrait white">
+                  <div className="device">
+                    <div className="screen">
                       <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
+                    <img src="img/demo-screen-1.jpg" className="img-fluid" alt="">
                   </div>
-                      <div class="button">
+                      <div className="button">
                         <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                   </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8 my-auto">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="feature-item">
-                        <i class="icon-screen-smartphone text-primary"></i>
+              <div className="col-lg-8 my-auto">
+                <div className="container-fluid">
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="feature-item">
+                        <i className="icon-screen-smartphone text-primary"></i>
                         <h3>Device Mockups</h3>
-                        <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                        <p className="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="feature-item">
-                        <i class="icon-camera text-primary"></i>
+                    <div className="col-lg-6">
+                      <div className="feature-item">
+                        <i className="icon-camera text-primary"></i>
                         <h3>Flexible Use</h3>
-                        <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                        <p className="text-muted">Put an image, video, animation, or anything else in the screen!</p>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="feature-item">
-                        <i class="icon-present text-primary"></i>
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <div className="feature-item">
+                        <i className="icon-present text-primary"></i>
                         <h3>Free to Use</h3>
-                        <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                        <p className="text-muted">As always, this theme is free to download and use for any purpose!</p>
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="feature-item">
-                        <i class="icon-lock-open text-primary"></i>
+                    <div className="col-lg-6">
+                      <div className="feature-item">
+                        <i className="icon-lock-open text-primary"></i>
                         <h3>Open Source</h3>
-                        <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                        <p className="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
                       </div>
                     </div>
                   </div>
@@ -129,57 +105,42 @@ const Login = () => {
           </div>
     </section> */}
 
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container">
+    <section className="cta">
+      <div className="cta-content">
+        <div className="container">
           <h2>Stop waiting.<br />Start building.</h2>
-          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+          <a href="#contact" className="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
         </div>
       </div>
-      <div class="overlay"></div>
+      <div className="overlay"></div>
     </section>
 
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
+    <section className="contact bg-primary" id="contact">
+      <div className="container">
         <h2>We
-          <i class="fas fa-heart"></i>
+          <i className="fas fa-heart"></i>
           new friends!</h2>
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-twitter">
+        <ul className="list-inline list-social">
+          <li className="list-inline-item social-twitter">
             <a href="#">
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
           </li>
-          <li class="list-inline-item social-facebook">
+          <li className="list-inline-item social-facebook">
             <a href="#">
-              <i class="fab fa-facebook-f"></i>
+              <i className="fab fa-facebook-f"></i>
             </a>
           </li>
-          <li class="list-inline-item social-google-plus">
+          <li className="list-inline-item social-google-plus">
             <a href="#">
-              <i class="fab fa-google-plus-g"></i>
+              <i className="fab fa-google-plus-g"></i>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; Your Website 2020. All Rights Reserved.</p>
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+    <Footer />
   </>
   );
 };
