@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -12,7 +13,7 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link js-scroll-trigger" href="#download">Home</a>
+              <Link className="nav-link js-scroll-trigger" to="/home">Home</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link js-scroll-trigger" href="#features">Login</a>
