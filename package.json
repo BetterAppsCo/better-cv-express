@@ -26,6 +26,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "app-module-path": "^2.2.0",
     "autoprefixer": "^9.8.4",
     "chalk": "^4.1.0",
     "cookie-parser": "~1.4.4",
@@ -36,12 +37,14 @@
     "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
     "lodash": "^4.17.15",
+    "logger": "0.0.1",
     "mkdirp": "^0.5.1",
     "moment": "^2.27.0",
     "morgan": "~1.9.1",
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4",
     "path": "^0.12.7",
+    "pg": "^8.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
@@ -51,8 +54,10 @@
     "redux-thunk": "^2.3.0",
     "require-directory": "^2.1.1",
     "sass-loader": "^9.0.2",
-    "sequelize": "^6.3.0",
-    "tailwindcss": "^1.4.6"
+    "sequelize": "^6.3.3",
+    "tailwindcss": "^1.4.6",
+    "winston": "^3.3.3",
+    "winston-sentry": "^0.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
