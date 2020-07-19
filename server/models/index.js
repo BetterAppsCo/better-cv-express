@@ -5,8 +5,8 @@ pg.defaults.parseInt8 = true;
 const Sequelize = require('sequelize');
 const logger = require('../logger');
 
-const sequelize = new Sequelize(process.env.DATABASE_NAME, process.env.DATABASE_USERNAME, process.env.DATABASE_password, {
-  host: process.env.DATABASE_HOST,
+const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+  host: process.env.DB_HOST,
   dialect: 'postgres',
   benchmark: true,
   logging: (msg, executionTime) => {
@@ -20,13 +20,13 @@ const sequelize = new Sequelize(process.env.DATABASE_NAME, process.env.DATABASE_
   }
 });
 const db = {};
-const excludedFromModels = ['index.js', 'hooks', 'instanceMethods', 'staticMethods', 'register.js'];
+const excludedFromModels = ['index.js', 'register.js', 'hooks'];
 fs.readdirSync(__dirname)
   .filter(file => {
     return file.indexOf('.') !== 0 && !excludedFromModels.includes(file);
   })
   .forEach(file => {
-    const model = sequelize.import(path.join(__dirname, file));
+    const model = require(path.join(__dirname, file));
     db.names = [...(db.names || []), model.name];
     db[model.name] = model;
   });

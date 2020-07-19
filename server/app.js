@@ -1,13 +1,11 @@
-require("dotenv-extended").load();
-require('app-module-path').addPath(__dirname);
-
+require('./loadEnvironment');
+const models = require('models');
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const logger = require('./logger');
-const models = require('models');
 
 models.sequelize
   .authenticate()
