@@ -3,7 +3,7 @@ const path = require('path');
 var pg = require('pg');
 pg.defaults.parseInt8 = true;
 const Sequelize = require('sequelize');
-const logger = require('logger');
+const logger = require('../logger');
 
 const sequelize = new Sequelize(process.env.DATABASE_NAME, process.env.DATABASE_USERNAME, process.env.DATABASE_password, {
   host: process.env.DATABASE_HOST,

@@ -23,15 +23,16 @@ const transports = [
   })
 ];
 
-// if (process.env.NODE_ENV === 'development') {
-//   transports.push(
-//     new winston.transports.Console({
-//       handleExceptions: true,
-//       humanReadableUnhandledException: true,
-//       format: combine(myFormat)
-//     })
-//   ); //For Console log
-// } else {
+if (process.env.NODE_ENV === 'development') {
+  transports.push(
+    new winston.transports.Console({
+      handleExceptions: true,
+      humanReadableUnhandledException: true,
+      format: combine(myFormat)
+    })
+  ); //For Console log
+} 
+// else {
 //   transports.push(
 //     new Sentry({
 //       name: 'error-logger',
