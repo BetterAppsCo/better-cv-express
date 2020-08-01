@@ -36,7 +36,7 @@
     "express": "~4.16.1",
     "fs": "0.0.1-security",
     "http-errors": "~1.6.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "logger": "0.0.1",
     "mkdirp": "^0.5.1",
     "moment": "^2.27.0",
