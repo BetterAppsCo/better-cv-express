@@ -615,3 +615,31 @@ info: [1 ms] Executed (default): SELECT 1+1 AS result
 info: Connection has been established successfully.
 info: [1 ms] Executed (default): SELECT 1+1 AS result
 info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [1 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
+info: [0 ms] Executed (default): SELECT 1+1 AS result
+info: Connection has been established successfully.
